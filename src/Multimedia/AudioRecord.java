@@ -1,10 +1,10 @@
 package Multimedia;
 
-public class AudioRecord extends MultimediaElement implements Play {
+public class AudioRecord extends MultimediaElement implements Riproducibile {
 
     private int duration;
     private int volume;
-    private boolean playable = true;
+
 
 
     public AudioRecord(String title, int duration, int volume) {
@@ -60,6 +60,7 @@ public class AudioRecord extends MultimediaElement implements Play {
                 for (int j = 0; j < this.volume; j++) {
                     System.out.print("!");
                 }
+                System.out.println("\n");
             }
         }
 

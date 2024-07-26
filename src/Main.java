@@ -115,23 +115,23 @@ public class Main {
                     switch (action) {
                         case 1:
                             ((AudioRecord) elementi[rispInt - 1]).alzaVolume();
-                            System.out.println("Volume aumentato!\n");
+                            System.out.println("\nVolume aumentato!\n");
                             System.out.println(((AudioRecord) elementi[rispInt - 1]).getVolume());
                             break;
                         case 2:
                             ((AudioRecord) elementi[rispInt - 1]).abbassaVolume();
-                            System.out.println("Volume abbassato!\n");
+                            System.out.println("\nVolume abbassato!\n");
                             break;
                         case 3:
                             ((AudioRecord) elementi[rispInt - 1]).play();
-                            System.out.println("Azione play effettuata!\n");
+                            System.out.println("\nAzione play effettuata!\n");
                             break;
                         default:
                             break;
                     }
                 } else if (elementi[rispInt - 1] instanceof Video) {
                     System.out.println("------------------------------------------------------------------------------------------");
-                    System.out.println("Le azioni disponibili sono:\n1 - aumenta volume\n2 - diminuisci volume\n3 - aumenta luminosità\n4 - diminuisci luminosità\n5 - Play!\n");
+                    System.out.println("Le azioni disponibili sono:\n1 - aumenta volume\n2 - diminuisci volume\n3 - aumenta luminosità\n4 - diminuisci luminosità\n5 - play!\n");
 
                     int action = s.nextInt();
                     s.nextLine();
@@ -139,24 +139,24 @@ public class Main {
                     switch (action) {
                         case 1:
                             ((Video) elementi[rispInt - 1]).alzaVolume();
-                            System.out.println("Volume aumentato!\n");
+                            System.out.println("\nVolume aumentato!\n");
 
                             break;
                         case 2:
                             ((Video) elementi[rispInt - 1]).abbassaVolume();
-                            System.out.println("Volume abbassato!\n");
+                            System.out.println("\nVolume abbassato!\n");
                             break;
                         case 3:
                             ((Video) elementi[rispInt - 1]).aumentaLuminosita();
-                            System.out.println("Luminosità aumentata!\n");
+                            System.out.println("\nLuminosità aumentata!\n");
                             break;
                         case 4:
                             ((Video) elementi[rispInt - 1]).diminuisciLuminosita();
-                            System.out.println("Luminosità diminuita!\n");
+                            System.out.println("\nLuminosità diminuita!\n");
                             break;
                         case 5:
                             ((Video) elementi[rispInt - 1]).play();
-                            System.out.println("Azione play effettuata!\n");
+                            System.out.println("\nAzione play effettuata!\n");
                             break;
                         default:
                             break;
@@ -172,15 +172,15 @@ public class Main {
                     switch (action) {
                         case 1:
                             ((Image) elementi[rispInt - 1]).aumentaLuminosita();
-                            System.out.println("Volume aumentato!\n");
+                            System.out.println("\nLuminosità aumentata!\n");
                             break;
                         case 2:
-                            ((Image) elementi[rispInt - 1]).aumentaLuminosita();
-                            System.out.println("Volume abbassato!\n");
+                            ((Image) elementi[rispInt - 1]).diminuisciLuminosita();
+                            System.out.println("\nLuminosità diminuita!\n");
                             break;
                         case 3:
                             ((Image) elementi[rispInt - 1]).show();
-                            System.out.println("Azione show effettuata!\n");
+                            System.out.println("\nAzione show effettuata!\n");
                             break;
                         default:
                             break;
@@ -191,37 +191,6 @@ public class Main {
 
 
         }
-
-        // si
-
-        /* su quale elemento vuoi effettuare un'azione?
-         * lista elementi...
-         *
-         *
-         *
-         *  */
-
-
-        /* hai selezionato l'elemento <title>, è <typeObject>
-         *
-         * quale azione vuoi effettuare?
-         *
-         * (esempio di immagine)
-         *
-         * - aumenta la luminosità...
-         * - diminuisci la luminosità...
-         * - show...
-         *
-         *
-         *
-         * */
-
-//        for (MultimediaElement obj : elementi) {
-//
-//            if (obj instanceof AudioRecord) ((AudioRecord) obj).play();
-//            if (obj instanceof Video) ((Video) obj).play();
-//
-//        }
 
 
         s.close();

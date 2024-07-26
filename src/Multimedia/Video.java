@@ -1,11 +1,11 @@
 package Multimedia;
 
-public class Video extends MultimediaElement implements Play {
+public class Video extends MultimediaElement implements Riproducibile {
 
     private int duration;
     private int volume;
     private int brightness;
-    private final boolean playable = true;
+
 
 
     public Video(String title, int duration, int volume, int brightness) {
